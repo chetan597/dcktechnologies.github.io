@@ -1,0 +1,70 @@
+/* css/style.css */
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+  background-color: #1e293b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Sections */
+section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+.dark-mode nav {
+  background-color: #020617;
+}
+
+.dark-mode .btn {
+  background-color: #334155;
+}
+
+.dark-mode .btn:hover {
+  background-color: #475569;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
