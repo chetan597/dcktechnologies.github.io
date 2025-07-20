@@ -4,18 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DCK Technologies | Empowering Digital Solutions</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- JS -->
   <script defer src="js/script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>DCK Technologies</h1>
-    <p>Empowering Businesses with Smart Digital Solutions</p>
-    <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+  <header class="sticky">
+    <div class="container">
+      <h1>DCK Technologies</h1>
+      <p>Empowering Businesses with Smart Digital Solutions</p>
+      <button id="darkModeToggle"><i class="fas fa-moon"></i> Toggle Dark Mode</button>
+    </div>
   </header>
 
   <nav>
-    <ul>
+    <ul class="container">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
@@ -24,40 +36,36 @@
   </nav>
 
   <main>
-    <section id="about" class="fade-in">
+    <section id="about" class="section fade-in container">
       <h2>About Us</h2>
       <p>DCK Technologies is a freelance tech brand led by Dasari Chetan Kumar, offering solutions in RPA (UiPath), WordPress Development, DevOps, and Cybersecurity.</p>
     </section>
 
-    <section id="services" class="fade-in">
+    <section id="services" class="section fade-in container">
       <h2>Our Services</h2>
       <ul>
-        <li>✅ UiPath RPA Automation</li>
-        <li>✅ WordPress Websites & SEO</li>
-        <li>✅ DevOps Setup & CI/CD Pipelines</li>
-        <li>✅ Cybersecurity Audits</li>
+        <li><i class="fas fa-robot"></i> UiPath RPA Automation</li>
+        <li><i class="fab fa-wordpress"></i> WordPress Websites & SEO</li>
+        <li><i class="fas fa-cogs"></i> DevOps Setup & CI/CD Pipelines</li>
+        <li><i class="fas fa-shield-alt"></i> Cybersecurity Audits</li>
       </ul>
     </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:chetankumar.dasari@gmail.com">chetankumar.dasari@gmail.com</a></p>
-    <p>Phone: +91 8019741546</p>
-    <p><a href="https://www.linkedin.com/in/chetan-kumar-dasari-36aa6a141/" target="_blank" rel="noopener noreferrer">Connect</a>
-</p>
-  </section>
-
-    <section class="fade-in">
-      <h2>Get Started</h2>
-      <button id="alertButton">Click Me</button>
+    <section id="portfolio" class="section fade-in container">
+      <h2>Portfolio</h2>
+      <p>Check out our recent work and case studies.</p>
     </section>
 
-    <section id="contact" class="fade-in">
+    <section class="section fade-in container">
+      <h2>Get Started</h2>
+      <button id="alertButton" class="btn-primary">Click Me</button>
+    </section>
+
+    <section id="contact" class="section fade-in container">
       <h2>Contact Us</h2>
       <p>Email: <a href="mailto:chetankumar.dasari@gmail.com">chetankumar.dasari@gmail.com</a></p>
       <p>Phone: <a href="tel:+918019741546">+91 80197 41546</a></p>
-      <p><a href="https://www.linkedin.com/in/chetan-kumar-dasari-36aa6a141/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-</p>
+      <p><a href="https://www.linkedin.com/in/chetan-kumar-dasari-36aa6a141/" target="_blank" rel="noopener">LinkedIn Profile</a></p>
 
       <form action="https://formsubmit.co/chetankumar.dasari@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
@@ -65,12 +73,12 @@
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit" class="btn-primary">Send Message</button>
       </form>
     </section>
   </main>
 
-  <footer>
+  <footer class="container">
     <p>© 2025 DCK Technologies. All rights reserved.</p>
   </footer>
 </body>
